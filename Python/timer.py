@@ -1,11 +1,11 @@
 import time
-run = raw_input("Start? > ")
+run = input("Start? > ")
 mins = 0
 # Only run if the user types in "start"
 if run == "start":
     # Loop until we reach 20 minutes running
     while mins != 1:
-        print ">>>>>>>>>>>>>>>>>>>>>", mins
+        print(">>>>>>>>>>>>>>>>>>>>>", mins)
         # Sleep for a minute
         time.sleep(60)
         # Increment the minute total

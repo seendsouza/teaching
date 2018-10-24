@@ -46,9 +46,9 @@ print("String")
 print(type("string"))
 print('String')
 print(type('string'))
-print"""multiline
+print("""multiline
         string
-     """
+     """)
 print("as long as you want")
 
 # Boolean
