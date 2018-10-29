@@ -50,6 +50,11 @@ for x in adjective:
   for y in fruits:
     print(x, y) 
 
+for i, value in enumerate(fruits):
+    print(i,value)
+
+for i, value in enumerate(fruits,1):
+    print(i,value)
 # While Loops
 
 print("\n\nWhile Loops")
