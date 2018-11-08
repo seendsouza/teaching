@@ -1,37 +1,37 @@
 """
-Write a program that prints the numbers from 1 to 20. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”."""
-def concat_strings(num):
+Write a program that prints the ibers from 1 to 20. But for multiples of three print “Fizz” instead of the iber and for the multiples of five print “Buzz”. For ibers which are multiples of both three and five print “FizzBuzz”."""
+def concat_strings(i,num_1,num_2):
     """
     See fizzbuzz_concat_strings.py for an explanation.
     """
     string = ""
-    if num % 3 == 0:
+    if i % num_1 == 0:
         string = string + "Fizz"
-    if num % 5 == 0:
+    if i % num_2 == 0:
         string = string + "Buzz"
-    if num % 5 != 0 and num % 3 != 0:
-        string = string + str(num)
+    if i % num_1 != 0 and i % num_2 != 0:
+        string = string + str(i)
     return(string)
 
-def if_elif_else(num):
+def if_elif_else(i,num_1,num_2):
     """
     See fizzbuzz_if_elif_else.py for an explanation.
     """
-    if num % 3 == 0 and num % 5 == 0:
+    if i % num_1 == 0 and i % num_2 == 0:
         return('FizzBuzz')
-    elif num % 3 == 0:
+    elif i % num_1 == 0:
             return('Fizz')
-    elif num % 5 == 0:
+    elif i % num_2 == 0:
         return('Buzz')
     else:
-        return(num)
+        return(i)
 def Main():
     """
     The main function for running FizzBuzz
     """
-    for num in range(1,21):
-        print(concat_strings(num))
-        print(if_elif_else(num))
+    for i in range(1,21):
+        print(concat_strings(i))
+        print(if_elif_else(i))
 
 # This just means that it will only execute when you run this program. It will not run if imported into another program, but the previous functions will be improted..
 if __name__ == "__main__":
