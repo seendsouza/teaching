@@ -1,0 +1,2 @@
+# Ignore all .pyc (byte code) files
+*.pyc
