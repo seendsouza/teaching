@@ -1,4 +1,4 @@
-#x = 1
+# x = 1
 try:
     print(x)
 except SyntaxError:

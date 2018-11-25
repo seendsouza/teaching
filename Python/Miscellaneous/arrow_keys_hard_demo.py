@@ -1,4 +1,8 @@
-import sys,tty,termios
+import sys
+import tty
+import termios
+
+
 class _Getch:
     def __call__(self):
             fd = sys.stdin.fileno()
@@ -10,25 +14,29 @@ class _Getch:
                 termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
             return ch
 
+
 def get():
         inkey = _Getch()
         while(1):
-                k=inkey()
-                if k!='':break
-        if k=='\x1b[A':
+                k = inkey()
+                if k != '':
+                    break
+        if k == '\x1b[A':
                 print("up")
-        elif k=='\x1b[B':
+        elif k == '\x1b[B':
                 print("down")
-        elif k=='\x1b[C':
+        elif k == '\x1b[C':
                 print("right")
-        elif k=='\x1b[D':
+        elif k == '\x1b[D':
                 print("left")
         else:
                 print("not an arrow key!")
 
+
 def main():
-        for i in range(0,20):
+        for i in range(0, 20):
                 get()
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
         main()

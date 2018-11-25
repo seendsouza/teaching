@@ -12,4 +12,3 @@ if run == "start":
         mins += 1
     # Bring up final message
     print("1 minute has passed.")
-

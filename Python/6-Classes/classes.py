@@ -8,35 +8,40 @@ class Person():
     customized to a specific initial state. Therefore a class may define
     a special method named __init__(), like this:
     """
-    def __init__(self, age,name):
+    def __init__(self, age, name):
         self.age = age
         self.name = name
+
     def change_age(self):
         self.age += 1
         return self.age
 
+
 class Dog(Person):
     """
-    The Dog class takes in the Person class and all its functions and properties.
+    The Dog class takes in the Person class and all its functions
+    and properties.
     The change_age method is overidden by the dog's version of that method.
     """
     def change_age(self):
         self.age += 7
         return self.age
+
+
 """
 Adam and Sean are both 17, but one is a human and the other is a dog
 age, name, and dog_name are all variables
 """
 age = 17
-name = "Adam" 
+name = "Adam"
 dog_name = "Sean"
 
 """
 adam is an instance of the Person class
 sean is an instance of the Dog class
 """
-adam = Person(age,name)
-sean = Dog(age,dog_name)
+adam = Person(age, name)
+sean = Dog(age, dog_name)
 """
 Deeper explanation (using sean):
     The above creates an instance of the class and assigns the object

@@ -54,5 +54,3 @@ print("as long as you want")
 # Boolean
 print(type(True))
 print(False)
-
-
